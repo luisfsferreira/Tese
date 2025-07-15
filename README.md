@@ -42,14 +42,8 @@ Foi utilizada uma variante da arquitetura **UNeSt**, composta por:
 - **Encoder** baseado em um **Hierarchical Transformer Encoder**
 - **Decoder** baseado em **convoluções**
 
-#### 🧠 Mecanismo de Atenção Proposto: Bilateral Local Attention (BLA)
 
-Foi proposto um novo mecanismo de atenção denominado **Bilateral Local Attention (BLA)**, com o objetivo de melhorar a segmentação da fibrose miocárdica em imagens de Ressonância Magnética Cardíaca.
-
-O mecanismo BLA combina dois tipos distintos de atenção local:
-
-
-## 🎯 Mecanismo de Atenção Proposto: Bilateral Local Attention (BLA)
+## 🎯 Mecanismo de Atenção Proposto no Encoder: Bilateral Local Attention (BLA)
 
 Neste trabalho, foram comparados dois tipos de **Transformer Encoder**:
 
