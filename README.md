@@ -42,6 +42,7 @@ Foi utilizada uma variante da arquitetura **UNeSt**, composta por:
 - **Encoder** baseado em um **Hierarchical Transformer Encoder**
 - **Decoder** baseado em **convoluções**
 
+---
 
 ## 🎯 Mecanismo de Atenção Proposto no Encoder: Bilateral Local Attention (BLA)
 
