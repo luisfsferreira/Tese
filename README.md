@@ -42,3 +42,32 @@ Foi utilizada uma variante da arquitetura **UNeSt**, composta por:
 - **Encoder** baseado em um **Hierarchical Transformer Encoder**
 - **Decoder** baseado em **convoluções**
 
+#### 🧠 Mecanismo de Atenção Proposto: Bilateral Local Attention (BLA)
+
+Foi proposto um novo mecanismo de atenção denominado **Bilateral Local Attention (BLA)**, com o objetivo de melhorar a segmentação da fibrose miocárdica em imagens de Ressonância Magnética Cardíaca.
+
+O mecanismo BLA combina dois tipos distintos de atenção local:
+
+
+## 🎯 Mecanismo de Atenção Proposto: Bilateral Local Attention (BLA)
+
+Neste trabalho, foram comparados dois tipos de **Transformer Encoder**:
+
+- 🔹 **CSWin Transformer** (original): utiliza atenção local apenas no **espaço da imagem**
+- 🔹 **Bilateral Local Attention (BLA)** (proposto): combina dois tipos de atenção local distintos para capturar **relações mais ricas e contextuais** entre patches
+
+
+## 🧠 Componentes do Mecanismo Proposto
+
+### 1. 🖼️ Image-Space Local Attention
+- Baseado na atenção do **CSWin Transformer**
+- Calcula atenção **dentro de cada patch**, ou seja, entre **tokens presentes na mesma janela espacial**
+- Foco em **relações locais espaciais**, respeitando a posição dos elementos na imagem
+
+### 2. 🧬 Feature-Space Local Attention (FSLA)
+- **Principal inovação** do modelo proposto
+- Calcula atenção no **espaço das características (feature space)**, ignorando a posição física dos patches
+- Permite capturar **relações entre regiões da imagem com características semelhantes**, mesmo que estejam **fisicamente distantes**
+- Ajuda a reconhecer padrões patológicos que se manifestam de forma semelhante em diferentes regiões
+
+
